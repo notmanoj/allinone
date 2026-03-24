@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Sense | Gallery</title>
+    <meta
+      name="description"
+      content="A soft glass gallery page for showcasing projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="corner-logo" aria-label="Site logo">🍊</div>
+
+    <main class="feed-shell">
+      <section class="content-layout">
+        <section class="apps-list" id="projects-grid" aria-live="polite"></section>
+
+        <aside class="right-panel" aria-label="Contact and profile panels">
+          <section class="contact-card" aria-label="App request form">
+            <h2>Need an app built for your idea?</h2>
+            <p>
+              Share what you need, and if it matches my build focus, I can design and create it for you.
+            </p>
+
+            <form id="request-form" class="request-form" action="https://formsubmit.co/manojraiux@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New App Request from Alln1" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <label for="sender-name">Name</label>
+              <input id="sender-name" name="Name" type="text" placeholder="Your name" required />
+
+              <label for="sender-email">Email</label>
+              <input id="sender-email" name="Email" type="email" placeholder="you@example.com" required />
+
+              <label for="app-message">Message</label>
+              <textarea
+                id="app-message"
+                name="Message"
+                rows="5"
+                placeholder="Tell me what kind of app you want..."
+                required
+              ></textarea>
+
+              <button type="submit">Send Request</button>
+            </form>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </section>
+
+          <section class="profile-card" aria-label="Designer profile">
+            <img
+              src="assets/profile-photo.jpg"
+              data-fallbacks="assets/profile-photo.png,assets/profile-photo.jpeg,assets/profile-photo.webp,assets/profile-photo.svg"
+              alt="Profile photo of the designer and developer"
+              class="profile-photo"
+            />
+            <h3>Meet the Designer and Developer Behind These Apps</h3>
+            <p>
+              I am Manoj, a designer-developer focused on creating useful, clean, and thoughtful digital products.
+            </p>
+            <a href="https://manojux.com/" target="_blank" rel="noopener noreferrer">Visit manojux.com</a>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
